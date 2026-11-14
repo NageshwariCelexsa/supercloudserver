@@ -1,0 +1,1306 @@
+@model supercloudserver.Models.HomeViewModel
+@{
+    ViewData["Title"] = "Windows & Linux Cloud Server Hosting in India | SuperCloudServer";
+    ViewData["MetaDescription"] = "Get a Windows or Linux cloud server on dedicated hardware, deployed in minutes. Instant scaling, 24x7 support and a 30-day money-back guarantee. Plans from ₹250/month.";
+}
+
+<!-- =========================================================================
+     1. HERO SECTION
+     ========================================================================= -->
+<section class="hero-section" id="overview">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="hero-pill">
+                    <i class="bi bi-rocket-takeoff-fill"></i> Next-Gen Enterprise Cloud Infrastructure
+                </div>
+                <h1 class="hero-title">
+                    Cloud Servers That <span class="text-primary">Grow When You Do</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Launch a powerful, private cloud server in minutes. Pick the resources you need today, add more tomorrow, and pay only for what you use.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 mb-4">
+                    <a href="#plans" class="btn btn-primary-scs fs-6">
+                        <i class="bi bi-grid-fill"></i> View Cloud Plans
+                    </a>
+                    <a href="#get-started" class="btn btn-outline-scs fs-6">
+                        <i class="bi bi-chat-dots-fill"></i> Talk to a Cloud Expert
+                    </a>
+                </div>
+
+                <div class="hero-trust-bar">
+                    <div class="hero-trust-item">
+                        <i class="bi bi-shield-check"></i> 30-Day Money-Back Guarantee
+                    </div>
+                    <div class="hero-trust-item">
+                        <i class="bi bi-clock-fill"></i> 24x7x365 Priority Support
+                    </div>
+                    <div class="hero-trust-item">
+                        <i class="bi bi-cpu-fill"></i> Dedicated Hardware, Never Shared
+                    </div>
+                    <div class="hero-trust-item">
+                        <i class="bi bi-check2-circle"></i> 99.99% Uptime SLA
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Live Server Visualizer -->
+            <div class="col-lg-6">
+                <div class="server-dashboard-card">
+                    <div class="server-header">
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="server-status-dot"></span>
+                            <span class="fw-bold fs-6">Cloud Node Cluster: ACTIVE</span>
+                        </div>
+                        <span class="badge bg-primary bg-opacity-25 text-info border border-info border-opacity-25 px-2 py-1">
+                            <i class="bi bi-hdd-network-fill me-1"></i> RAID 1 Mirrored
+                        </span>
+                    </div>
+
+                    <div class="metric-gauge-box">
+                        <div class="metric-label">
+                            <span>Dedicated vCPU (High Frequency)</span>
+                            <span id="hero-cpu-text" class="text-info fw-bold">18%</span>
+                        </div>
+                        <div class="metric-progress">
+                            <div class="metric-bar" id="hero-cpu-bar" style="width: 18%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-gauge-box">
+                        <div class="metric-label">
+                            <span>Reserved RAM (Zero Throttling)</span>
+                            <span id="hero-ram-text" class="text-success fw-bold">42%</span>
+                        </div>
+                        <div class="metric-progress">
+                            <div class="metric-bar bg-success" id="hero-ram-bar" style="width: 42%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-gauge-box">
+                        <div class="metric-label">
+                            <span>Enterprise NVMe Read/Write Speed</span>
+                            <span class="text-warning fw-bold">3,500 MB/s</span>
+                        </div>
+                        <div class="metric-progress">
+                            <div class="metric-bar bg-warning" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-gauge-box mb-0">
+                        <div class="metric-label">
+                            <span>Automatic Failover Health Monitor</span>
+                            <span class="text-success fw-bold">100% Redundant</span>
+                        </div>
+                        <div class="metric-progress">
+                            <div class="metric-bar bg-info" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="server-feature-tags">
+                        <span class="server-tag"><i class="bi bi-cpu"></i> Intel Xeon / AMD EPYC</span>
+                        <span class="server-tag"><i class="bi bi-shield-shaded"></i> ClamAV & Anti-Spam</span>
+                        <span class="server-tag"><i class="bi bi-terminal"></i> cPanel / Plesk</span>
+                        <span class="server-tag"><i class="bi bi-arrow-repeat"></i> Auto-Failover</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     2. WHY CHOOSE SUPERCLOUDSERVER (KEY BENEFITS)
+     ========================================================================= -->
+<section class="py-5" id="benefits">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Engineered for Reliability</span>
+            <h2 class="section-title">Why Choose SuperCloudServer Cloud Servers?</h2>
+            <p class="section-subtitle">
+                Built on isolated enterprise hardware and high-speed network meshes, our cloud instances offer the responsiveness of dedicated servers at cloud-native flexibility.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Benefit 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                    </div>
+                    <h4>Performance without the wait</h4>
+                    <p>
+                        Your workloads run on fast SSD/NVMe storage and modern processors, so pages load quickly and applications stay responsive even at peak hours.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <i class="bi bi-pie-chart-fill"></i>
+                    </div>
+                    <h4>Resources that are truly yours</h4>
+                    <p>
+                        CPU and RAM are reserved for your server, so a busy neighbour never slows you down. Zero resource contention and guaranteed throughput.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h4>Scale in a few clicks</h4>
+                    <p>
+                        Need more power for a sale, a launch or a busy season? Increase CPU, memory or storage from your dashboard, with no rebuild and no lengthy downtime.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <i class="bi bi-shield-lock-fill"></i>
+                    </div>
+                    <h4>Built-in protection</h4>
+                    <p>
+                        Firewall controls, regular backups, ClamAV antivirus and continuous monitoring keep your data safe and your services online around the clock.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Benefit 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h4>Real people, any hour</h4>
+                    <p>
+                        Our support engineers are available around the clock to help with setup, tuning and troubleshooting via phone, ticket, and live chat.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Benefit 6 (Celexsa Enterprise Grade) -->
+            <div class="col-lg-4 col-md-6">
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <i class="bi bi-layers-fill"></i>
+                    </div>
+                    <h4>Automatic Hardware Failover</h4>
+                    <p>
+                        Pooled dedicated nodes monitor each other continuously. If any physical machine encounters an issue, your workload moves automatically without disruption.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     3. PLANS AND PRICING (LINUX & WINDOWS)
+     ========================================================================= -->
+<section class="pricing-section" id="plans">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Transparent Indian & Global Pricing</span>
+            <h2 class="section-title">Cloud Server Plans</h2>
+            <p class="section-subtitle">
+                Clear, honest pricing with single-domain dedicated resource allocations. Choose Linux or Windows with instant deployment and a 30-day money-back guarantee.
+            </p>
+        </div>
+
+        <!-- Platform Switcher Pill -->
+        <div class="platform-switcher-container">
+            <div class="platform-pill-toggle">
+                <button type="button" class="platform-btn @(Model.ActivePlatformTab == "Linux" ? "active" : "")" data-platform="Linux">
+                    <i class="bi bi-ubuntu"></i> Linux Cloud Servers
+                </button>
+                <button type="button" class="platform-btn @(Model.ActivePlatformTab == "Windows" ? "active" : "")" data-platform="Windows">
+                    <i class="bi bi-windows"></i> Windows Cloud Servers
+                </button>
+            </div>
+        </div>
+
+        <!-- Billing Cycle & Currency Switcher -->
+        <div class="currency-cycle-controls">
+            <div class="cycle-toggle">
+                <div class="form-check form-check-inline mb-0">
+                    <input class="form-check-input" type="radio" name="billingCycle" id="cycleMonthly" value="monthly" checked>
+                    <label class="form-check-label fw-bold" for="cycleMonthly">Monthly Billing</label>
+                </div>
+                <div class="form-check form-check-inline mb-0">
+                    <input class="form-check-input" type="radio" name="billingCycle" id="cycleAnnual" value="annual">
+                    <label class="form-check-label fw-bold" for="cycleAnnual">Annual Billing</label>
+                </div>
+                <span class="discount-badge">Save 15% on Annual</span>
+            </div>
+        </div>
+
+        <!-- LINUX PLANS VIEW -->
+        <div id="linux-plans-view" class="@(Model.ActivePlatformTab == "Linux" ? "" : "d-none")">
+            <div class="row g-4 justify-content-center">
+                @foreach (var plan in Model.LinuxPlans)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-card @(plan.IsPopular ? "featured" : "")">
+                            @if (plan.IsPopular)
+                            {
+                                <span class="featured-badge">Most Popular</span>
+                            }
+                            <div class="plan-header">
+                                <h3 class="plan-name">@plan.Name</h3>
+                                <p class="plan-tagline">@plan.Tagline</p>
+
+                                <div class="plan-price-box" 
+                                     data-inr-monthly="@plan.PriceMonthlyInr" 
+                                     data-inr-annual="@plan.PriceAnnualInr"
+                                     data-usd-monthly="@plan.PriceMonthlyUsd"
+                                     data-usd-annual="@plan.PriceAnnualUsd">
+                                    <span class="plan-currency">₹</span>
+                                    <span class="plan-amount">@plan.PriceMonthlyInr.ToString("N0")</span>
+                                    <span class="plan-period">/ month</span>
+                                </div>
+
+                                <div class="plan-specs-summary">
+                                    <div class="spec-item">
+                                        <span class="spec-label">Disk Space</span>
+                                        <span class="spec-val">@plan.DiskSpace</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Bandwidth</span>
+                                        <span class="spec-val">@plan.DataTransfer</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Email</span>
+                                        <span class="spec-val">@plan.EmailAccounts</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="plan-features-list">
+                                @foreach (var feat in plan.Highlights)
+                                {
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <span>@feat</span>
+                                    </li>
+                                }
+                            </ul>
+
+                            <button type="button" 
+                                    class="btn @(plan.IsPopular ? "btn-primary-scs" : "btn-outline-scs") w-100 justify-content-center select-plan-trigger" 
+                                    data-platform="Linux" 
+                                    data-plan="@plan.Name (@(plan.DiskSpace))">
+                                <span>Configure & Deploy</span> <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- WINDOWS PLANS VIEW -->
+        <div id="windows-plans-view" class="@(Model.ActivePlatformTab == "Windows" ? "" : "d-none")">
+            <div class="row g-4 justify-content-center">
+                @foreach (var plan in Model.WindowsPlans)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-card @(plan.IsPopular ? "featured" : "")">
+                            @if (plan.IsPopular)
+                            {
+                                <span class="featured-badge">Corporate Standard</span>
+                            }
+                            <div class="plan-header">
+                                <h3 class="plan-name">@plan.Name</h3>
+                                <p class="plan-tagline">@plan.Tagline</p>
+
+                                <div class="plan-price-box" 
+                                     data-inr-monthly="@plan.PriceMonthlyInr" 
+                                     data-inr-annual="@plan.PriceAnnualInr"
+                                     data-usd-monthly="@plan.PriceMonthlyUsd"
+                                     data-usd-annual="@plan.PriceAnnualUsd">
+                                    <span class="plan-currency">₹</span>
+                                    <span class="plan-amount">@plan.PriceMonthlyInr.ToString("N0")</span>
+                                    <span class="plan-period">/ month</span>
+                                </div>
+
+                                <div class="plan-specs-summary">
+                                    <div class="spec-item">
+                                        <span class="spec-label">Disk Space</span>
+                                        <span class="spec-val">@plan.DiskSpace</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Bandwidth</span>
+                                        <span class="spec-val">@plan.DataTransfer</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Email</span>
+                                        <span class="spec-val">@plan.EmailAccounts</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="plan-features-list">
+                                @foreach (var feat in plan.Highlights)
+                                {
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <span>@feat</span>
+                                    </li>
+                                }
+                            </ul>
+
+                            <button type="button" 
+                                    class="btn @(plan.IsPopular ? "btn-primary-scs" : "btn-outline-scs") w-100 justify-content-center select-plan-trigger" 
+                                    data-platform="Windows" 
+                                    data-plan="@plan.Name (@(plan.DiskSpace))">
+                                <span>Configure & Deploy</span> <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Custom Enterprise Setup Banner -->
+        <div class="custom-quote-banner">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <span class="badge bg-primary text-white mb-2 px-3 py-1">Custom Infrastructure</span>
+                    <h3 class="fw-bold mb-2 text-white">Need more power, high memory, or dedicated clusters?</h3>
+                    <p class="text-secondary mb-0">
+                        We build custom high-capacity cloud clusters, multi-node load balanced setups, and dedicated database servers tailored to your specific enterprise traffic.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#get-started" class="btn btn-primary-scs select-plan-trigger" data-platform="Linux" data-plan="Custom Enterprise Setup">
+                        <i class="bi bi-gear-wide-connected"></i> Request Custom Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     4. INTERACTIVE CLOUD RESOURCE CALCULATOR
+     ========================================================================= -->
+<section class="py-5" id="calculator">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Instant Resource Sizing</span>
+            <h2 class="section-title">Interactive Cloud Price Calculator</h2>
+            <p class="section-subtitle">
+                Estimate the monthly investment for custom CPU, RAM, and high-speed NVMe storage allocations.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="calculator-card">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-7">
+                            <!-- vCPU Slider -->
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <label class="fw-bold fs-6"><i class="bi bi-cpu text-primary me-2"></i> Dedicated vCPU Cores</label>
+                                    <span id="calc-cpu-val" class="badge bg-primary px-3 py-2 fs-6">2 vCPUs</span>
+                                </div>
+                                <input type="range" class="form-range calculator-slider" id="slider-cpu" min="1" max="16" step="1" value="2">
+                                <div class="d-flex justify-content-between text-secondary small">
+                                    <span>1 Core</span>
+                                    <span>4 Cores</span>
+                                    <span>8 Cores</span>
+                                    <span>16 Cores</span>
+                                </div>
+                            </div>
+
+                            <!-- RAM Slider -->
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <label class="fw-bold fs-6"><i class="bi bi-memory text-info me-2"></i> Guaranteed RAM</label>
+                                    <span id="calc-ram-val" class="badge bg-info text-dark px-3 py-2 fs-6">4 GB RAM</span>
+                                </div>
+                                <input type="range" class="form-range calculator-slider" id="slider-ram" min="1" max="64" step="1" value="4">
+                                <div class="d-flex justify-content-between text-secondary small">
+                                    <span>1 GB</span>
+                                    <span>16 GB</span>
+                                    <span>32 GB</span>
+                                    <span>64 GB</span>
+                                </div>
+                            </div>
+
+                            <!-- Storage Slider -->
+                            <div class="mb-2">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <label class="fw-bold fs-6"><i class="bi bi-device-hdd text-warning me-2"></i> Mirrored NVMe SSD Storage</label>
+                                    <span id="calc-storage-val" class="badge bg-warning text-dark px-3 py-2 fs-6">50 GB NVMe</span>
+                                </div>
+                                <input type="range" class="form-range calculator-slider" id="slider-storage" min="10" max="1000" step="10" value="50">
+                                <div class="d-flex justify-content-between text-secondary small">
+                                    <span>10 GB</span>
+                                    <span>250 GB</span>
+                                    <span>500 GB</span>
+                                    <span>1,000 GB</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price summary column -->
+                        <div class="col-lg-5 text-center border-start border-secondary border-opacity-25 ps-lg-4">
+                            <span class="text-uppercase small fw-bold text-secondary">Estimated Investment</span>
+                            <div class="my-3">
+                                <span class="fs-2 fw-bold text-primary" id="calc-currency-symbol">₹</span>
+                                <span class="display-4 fw-extrabold text-white" id="calc-total-price">750</span>
+                                <span class="text-secondary">/ month</span>
+                            </div>
+                            <p class="small text-secondary mb-4">
+                                Includes automatic node failover, 24x7 monitoring, mirrored RAID-1 storage, and free migration assistance.
+                            </p>
+                            <button type="button" class="btn btn-primary-scs w-100 justify-content-center" id="calc-apply-btn">
+                                <i class="bi bi-check2-circle"></i> Deploy This Custom Config
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     5. WHAT IS INCLUDED WITH EVERY CLOUD SERVER
+     ========================================================================= -->
+<section class="py-5 bg-light" id="features">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Enterprise Standards</span>
+            <h2 class="section-title">What Is Included With Every Cloud Server</h2>
+            <p class="section-subtitle">
+                Everything you need to launch, scale, and protect your web applications without paying extra for essential server features.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-cpu"></i>
+                    <h5>Pooled Dedicated Hardware</h5>
+                    <p>Resources pooled across several dedicated servers with instant automatic failover if any machine drops.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-hdd-stack"></i>
+                    <h5>Mirrored (RAID 1) Storage</h5>
+                    <p>Real-time drive mirroring keeps your databases and files continuously safe and always accessible.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-window-desktop"></i>
+                    <h5>cPanel / Plesk Control Panel</h5>
+                    <p>Industry-standard graphical control panels for seamless management of files, email, databases and statistics.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-globe2"></i>
+                    <h5>Free DNS & Domain Routing</h5>
+                    <p>Complete DNS record management, unlimited subdomains, parked domains, and clean HTTP/HTTPS forwarding.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-database-fill-gear"></i>
+                    <h5>Unlimited Databases & FTP</h5>
+                    <p>Create unlimited MySQL databases with phpMyAdmin access and secure SFTP/FTP accounts for multiple developers.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-envelope-at-fill"></i>
+                    <h5>Enterprise Business Email</h5>
+                    <p>Full email hosting with POP3, IMAP, SMTP, responsive modern webmail, aliases, forwarders, and auto-responders.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-virus"></i>
+                    <h5>ClamAV & Spam Filtering</h5>
+                    <p>Proactive inbound/outbound spam defense, ClamAV antivirus scanning, and automated trojan neutralization.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-shield-lock"></i>
+                    <h5>Security & Account Hardening</h5>
+                    <p>Password-protected directories, IP address blocking, hotlink protection, and automated scheduled cron jobs.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-code-slash"></i>
+                    <h5>Multi-Language Runtime Support</h5>
+                    <p>Up-to-date PHP 8.x, Perl, Python, Ruby on Rails, Node.js, and ASP.NET Core runtimes ready to execute your code.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-router"></i>
+                    <h5>Dedicated IP Address</h5>
+                    <p>Clean dedicated IP available for enhanced email deliverability, custom SSL certificates, and secure API whitelisting.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-arrow-up-circle"></i>
+                    <h5>Instant Seamless Scaling</h5>
+                    <p>Upgrade to a larger plan or allocate more storage, memory, and CPU at any time with zero service disruption.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="included-feature-card">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <h5>Free White-Glove Migration</h5>
+                    <p>Our expert technicians transfer your files, databases, and emails from your existing host completely free of charge.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     6. CHOOSE YOUR LEVEL OF MANAGEMENT
+     ========================================================================= -->
+<section class="py-5" id="management">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Tailored Operations</span>
+            <h2 class="section-title">Choose Your Level of Management</h2>
+            <p class="section-subtitle">
+                Whether you want complete administrative autonomy or prefer our senior cloud engineers to handle maintenance, we have you covered.
+            </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Self-Managed -->
+            <div class="col-lg-5 col-md-6">
+                <div class="mgmt-card self-managed">
+                    <span class="mgmt-badge self">Self-Managed</span>
+                    <h3 class="fw-bold mb-3">You Hold the Keys</h3>
+                    <p class="text-secondary mb-4">
+                        Install your own software, configure the stack your way, and manage updates on your schedule. Ideal for developers, DevOps engineers, and experienced system administrators.
+                    </p>
+                    <ul class="plan-features-list mb-4">
+                        <li><i class="bi bi-check-circle-fill"></i> Full administrative & root/SSH privileges</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Custom package installation & kernel tuning</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Manage custom cron jobs, daemons, and microservices</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 24x7 hardware & network infrastructure support</li>
+                    </ul>
+                    <a href="#plans" class="btn btn-outline-scs w-100 justify-content-center">Explore Self-Managed Plans</a>
+                </div>
+            </div>
+
+            <!-- Fully Managed -->
+            <div class="col-lg-5 col-md-6">
+                <div class="mgmt-card fully-managed">
+                    <span class="mgmt-badge fully">Fully Managed</span>
+                    <h3 class="fw-bold mb-3">Hands-Off Infrastructure</h3>
+                    <p class="text-secondary mb-4">
+                        Our engineers handle server setup, security patches, continuous monitoring, and performance tuning so you can concentrate on your business instead of server maintenance.
+                    </p>
+                    <ul class="plan-features-list mb-4">
+                        <li><i class="bi bi-check-circle-fill"></i> 24x7 proactive monitoring & automated alerts</li>
+                        <li><i class="bi bi-check-circle-fill"></i> OS security patching and vulnerability hardening</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Database optimization & web server fine-tuning</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Priority telephone support & named engineer consults</li>
+                    </ul>
+                    <a href="#get-started" class="btn btn-primary-scs w-100 justify-content-center">Request Fully Managed</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     7. WHO IS A CLOUD SERVER FOR (USE CASES)
+     ========================================================================= -->
+<section class="py-5 bg-light" id="use-cases">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Target Workloads</span>
+            <h2 class="section-title">Who Is a Cloud Server For?</h2>
+            <p class="section-subtitle">
+                Engineered to meet the demands of modern web products, high-concurrency portals, and mission-critical enterprise systems.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="use-case-card">
+                    <i class="bi bi-cart4 use-case-icon"></i>
+                    <h4>Online Stores & E-Commerce</h4>
+                    <p class="text-secondary">
+                        Maintain lightning-fast page loading and seamless checkouts even during high-traffic festival sales, flash promotions, and seasonal peaks.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="use-case-card">
+                    <i class="bi bi-building use-case-icon"></i>
+                    <h4>Businesses & Digital Agencies</h4>
+                    <p class="text-secondary">
+                        Host client portals and business applications on robust dedicated hardware with centralized cPanel management and predictable performance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="use-case-card">
+                    <i class="bi bi-code-square use-case-icon"></i>
+                    <h4>Developers & Fast Startups</h4>
+                    <p class="text-secondary">
+                        Build, test, and deploy modern applications with full Git integration, staging environments, custom runtimes, and instant scaling.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="use-case-card">
+                    <i class="bi bi-cloud-check use-case-icon"></i>
+                    <h4>SaaS & Web App Owners</h4>
+                    <p class="text-secondary">
+                        Deliver low-latency user experiences with reserved CPU and RAM, guaranteed I/O speeds, and room to expand as subscriber counts surge.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="use-case-card">
+                    <i class="bi bi-database-check use-case-icon"></i>
+                    <h4>Databases, CRMs & ERP Tools</h4>
+                    <p class="text-secondary">
+                        Run mission-critical relational databases, ERP systems, and internal corporate tools on isolated, mirrored storage with zero noisy neighbors.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="use-case-card">
+                    <i class="bi bi-graph-up-arrow use-case-icon"></i>
+                    <h4>Growing High-Traffic Sites</h4>
+                    <p class="text-secondary">
+                        Break free from the memory limits, slow database responses, and shared server throttling common with traditional shared web hosting.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     8. LINUX OR WINDOWS: CHOOSING A PLATFORM
+     ========================================================================= -->
+<section class="py-5" id="platform-choice">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Platform Comparison</span>
+            <h2 class="section-title">Linux or Windows? Choose Your Platform</h2>
+            <p class="section-subtitle">
+                Select the operating system that matches your technology stack, development frameworks, and database requirements.
+            </p>
+        </div>
+
+        <div class="scs-table-wrapper mb-4">
+            <div class="table-responsive">
+                <table class="table scs-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Feature</th>
+                            <th class="highlight-col" style="width: 37.5%;"><i class="bi bi-ubuntu text-primary me-2"></i> Linux Cloud Server</th>
+                            <th style="width: 37.5%;"><i class="bi bi-windows text-info me-2"></i> Windows Cloud Server</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Best For</td>
+                            <td class="highlight-col">PHP, WordPress, Laravel, Python, Perl, Node.js, Ruby on Rails, e-commerce stores, and email-heavy sites</td>
+                            <td>Microsoft-based applications, ASP.NET Core, .NET 10/8, IIS, MSSQL, corporate and reseller workloads</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">How It Is Built</td>
+                            <td class="highlight-col">Several dedicated servers combined into one resilient resource pool with automated failover</td>
+                            <td>A server provisioned for you on isolated dedicated hardware, never shared with other tenants</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Control Panel</td>
+                            <td class="highlight-col">cPanel & WHM with full metrics and file managers</td>
+                            <td>Plesk / Windows Web Control Panel with IIS tooling</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Databases Supported</td>
+                            <td class="highlight-col">Unlimited MySQL / MariaDB</td>
+                            <td>Unlimited MySQL & Microsoft SQL Server (MSSQL)</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Uptime Promise</td>
+                            <td class="highlight-col"><span class="badge bg-success">99.99% Uptime SLA</span></td>
+                            <td><span class="badge bg-info text-dark">99.999% High Availability SLA</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Starting Price</td>
+                            <td class="highlight-col fw-bold text-primary">₹250 / month ($3.25/mo)</td>
+                            <td class="fw-bold text-dark">₹250 / month ($3.25/mo)</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Action</td>
+                            <td class="highlight-col">
+                                <a href="#plans" class="btn btn-sm btn-primary-scs select-plan-trigger" data-platform="Linux" data-plan="Linux Corporate 20 GB">Choose Linux</a>
+                            </td>
+                            <td>
+                                <a href="#plans" class="btn btn-sm btn-outline-scs select-plan-trigger" data-platform="Windows" data-plan="Windows Corporate 20 GB">Choose Windows</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     9. HOW IT WORKS IN THREE STEPS
+     ========================================================================= -->
+<section class="py-5 bg-light" id="how-it-works">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Quick Deployment</span>
+            <h2 class="section-title">Get Started in Three Steps</h2>
+            <p class="section-subtitle">
+                Go from configuration to active deployment in less than 15 minutes with our streamlined provisioning pipeline.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h4>Choose a Plan</h4>
+                    <p>
+                        Select the plan size (1 GB, 20 GB, or Unlimited) that matches your current project. You can scale it up at any time with a single click.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h4>Configure Your Server</h4>
+                    <p>
+                        Pick your preferred operating system (Linux or Windows), primary domain name, and management preferences in our simple form.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h4>Go Live in Minutes</h4>
+                    <p>
+                        Your cloud server is automatically provisioned and validated. Upload your files, connect your database, or let our engineers migrate you for free!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     10. CLOUD VS. SHARED VS. VPS COMPARISON
+     ========================================================================= -->
+<section class="py-5" id="compare">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Architectural Benchmark</span>
+            <h2 class="section-title">Cloud Server vs. Shared Hosting vs. VPS</h2>
+            <p class="section-subtitle">
+                See why forward-thinking companies migrate from legacy shared hosting and single-node VPS to multi-node resilient cloud servers.
+            </p>
+        </div>
+
+        <div class="scs-table-wrapper">
+            <div class="table-responsive">
+                <table class="table scs-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 22%;">Comparison Criteria</th>
+                            <th style="width: 26%;" class="text-muted">Shared Hosting</th>
+                            <th style="width: 26%;" class="text-muted">Standard VPS</th>
+                            <th style="width: 26%;" class="highlight-col"><i class="bi bi-cloud-check-fill text-primary me-2"></i> SuperCloudServer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Compute Resources</td>
+                            <td>Shared dynamically with hundreds of other sites</td>
+                            <td>Fixed slice on one single physical machine</td>
+                            <td class="highlight-col text-primary fw-bold">Dedicated & reserved; pooled across a resilient cloud</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Scalability</td>
+                            <td>Strict limits; requires migrating to a new server</td>
+                            <td>Moderate; often requires reboots and downtime</td>
+                            <td class="highlight-col text-primary fw-bold">Instant, on-demand upgrades with zero rebuilds</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Administrative Control</td>
+                            <td>Basic control panel; no root access</td>
+                            <td>Root / SSH access granted</td>
+                            <td class="highlight-col text-primary fw-bold">Full root / SSH access or fully managed by experts</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Reliability if Hardware Fails</td>
+                            <td>Site goes completely offline until physical box is repaired</td>
+                            <td>Site goes offline until physical host node recovers</td>
+                            <td class="highlight-col text-primary fw-bold">Instant automatic failover to healthy hardware</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Storage Architecture</td>
+                            <td>Standard mechanical or single SSD drives</td>
+                            <td>Single virtual disk image</td>
+                            <td class="highlight-col text-primary fw-bold">Mirrored (RAID 1) high-speed enterprise NVMe drives</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Best For</td>
+                            <td>Simple hobby blogs, low-traffic static sites</td>
+                            <td>Medium development projects</td>
+                            <td class="highlight-col text-primary fw-bold">Demanding businesses, e-commerce, and high-uptime apps</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     11. SECURITY AND RELIABILITY
+     ========================================================================= -->
+<section class="py-5 bg-light" id="security">
+    <div class="container py-4">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="section-tag">Rock-Solid Protection</span>
+                <h2 class="section-title">Enterprise Security & High Reliability</h2>
+                <p class="text-secondary mb-4">
+                    Your data sits on mirrored (RAID 1) drives and is spread across several enterprise servers, so one hardware fault never takes your business offline. If a physical node encounters a fault, another node picks up the workload automatically.
+                </p>
+
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-3">
+                        <i class="bi bi-shield-fill-check text-primary fs-3 flex-shrink-0"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1">ClamAV & Proactive Threat Defense</h5>
+                            <p class="text-secondary small mb-0">Continuous background antivirus scanning, real-time trojan isolation, and advanced inbound/outbound spam filtering shields your inbox.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <i class="bi bi-hdd-network-fill text-info fs-3 flex-shrink-0"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1">Automated Backups Every 5 Days</h5>
+                            <p class="text-secondary small mb-0">Automated system snapshots and disk backups run every 5 days, complemented by instant manual cPanel/Plesk full-backup generation at any time.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <i class="bi bi-lock-fill text-success fs-3 flex-shrink-0"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1">Account-Level Hardening Controls</h5>
+                            <p class="text-secondary small mb-0">Password-protected directories, SFTP encryption, granular IP address blocking, and hotlink protection provide total defense against unauthorized access.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="bg-white p-4 p-lg-5 rounded-4 border shadow-sm">
+                    <div class="d-flex align-items-center justify-content-between mb-4 pb-3 border-bottom">
+                        <div>
+                            <span class="text-muted small text-uppercase fw-bold">Service Level Agreement</span>
+                            <h3 class="fw-extrabold text-primary mb-0">99.99% Uptime</h3>
+                        </div>
+                        <i class="bi bi-patch-check-fill text-primary display-5"></i>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-3 bg-light rounded-3 text-center">
+                                <span class="d-block display-6 fw-bold text-dark">0%</span>
+                                <small class="text-muted fw-bold">Noisy Neighbor Impact</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-light rounded-3 text-center">
+                                <span class="d-block display-6 fw-bold text-dark">&lt; 15m</span>
+                                <small class="text-muted fw-bold">Rapid Provisioning</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-light rounded-3 text-center">
+                                <span class="d-block display-6 fw-bold text-dark">RAID 1</span>
+                                <small class="text-muted fw-bold">Drive Redundancy</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-light rounded-3 text-center">
+                                <span class="d-block display-6 fw-bold text-dark">24x7</span>
+                                <small class="text-muted fw-bold">Real-time Monitoring</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     12. SUPPORT AND FREE MIGRATION
+     ========================================================================= -->
+<section class="py-5" id="support">
+    <div class="container py-4">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+                <span class="section-tag">White-Glove Service</span>
+                <h2 class="section-title">Support and Free Migration</h2>
+                <p class="text-secondary mb-4">
+                    Our dedicated cloud engineers are on duty 24 hours a day, 7 days a week, 365 days a year to guide you through setup, configuration, and day-to-day operations.
+                </p>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-sm-6">
+                        <div class="p-3 border rounded-3 bg-white">
+                            <i class="bi bi-telephone-inbound-fill text-primary fs-4 mb-2 d-block"></i>
+                            <h6 class="fw-bold mb-1">Direct Phone Support</h6>
+                            <a href="tel:+917401666633" class="text-primary fw-bold">+91 7401 6666 33</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="p-3 border rounded-3 bg-white">
+                            <i class="bi bi-chat-quote-fill text-info fs-4 mb-2 d-block"></i>
+                            <h6 class="fw-bold mb-1">Ticketing & Live Chat</h6>
+                            <span class="text-muted small">Fast average response under 15 mins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3 rounded-3 bg-primary bg-opacity-10 border border-primary border-opacity-25">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <i class="bi bi-gift-fill text-primary"></i>
+                        <strong class="text-primary">100% Free Website & Database Migration</strong>
+                    </div>
+                    <p class="small text-secondary mb-0">
+                        Moving from GoDaddy, HostGator, Bluehost or AWS? We handle the entire transfer including web files, MySQL databases, and email inboxes with zero downtime.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Migration Process Graphic -->
+            <div class="col-lg-6">
+                <div class="bg-light p-4 p-lg-5 rounded-4 border">
+                    <h5 class="fw-bold mb-4">Our Seamless 4-Step Migration Process</h5>
+                    
+                    <div class="d-flex gap-3 mb-3">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 36px; height: 36px; flex-shrink: 0;">1</div>
+                        <div>
+                            <strong class="d-block text-dark">Pre-Migration Audit</strong>
+                            <span class="text-secondary small">We review your existing hosting specs, CMS version, and database size.</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-3">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 36px; height: 36px; flex-shrink: 0;">2</div>
+                        <div>
+                            <strong class="d-block text-dark">Staging & Data Copy</strong>
+                            <span class="text-secondary small">Files and SQL databases are copied to your new SuperCloudServer environment.</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-3">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 36px; height: 36px; flex-shrink: 0;">3</div>
+                        <div>
+                            <strong class="d-block text-dark">Verification & Testing</strong>
+                            <span class="text-secondary small">Our team verifies links, forms, email delivery, and SSL certificates via temp URL.</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 36px; height: 36px; flex-shrink: 0;">4</div>
+                        <div>
+                            <strong class="d-block text-dark">Seamless DNS Cutover</strong>
+                            <span class="text-secondary small">We update DNS records with zero downtime so your visitors never notice the switch!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     13. GET STARTED FORM (INTERACTIVE & MODEL-BOUND)
+     ========================================================================= -->
+<section class="py-5 bg-light" id="get-started">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="form-card">
+                    <div class="text-center mb-4">
+                        <span class="section-tag">Instant Request</span>
+                        <h2 class="fw-bold mb-2">Get Started</h2>
+                        <p class="text-secondary">
+                            Tell us what you need and our cloud engineering team will set up your server and answer your questions. Fields marked with <span class="text-danger">*</span> are required.
+                        </p>
+                    </div>
+
+                    <!-- Dynamic Feedback Message Area -->
+                    <div id="submitFeedback">
+                        @if (!string.IsNullOrEmpty(Model.SubmissionMessage))
+                        {
+                            <div class="alert @(Model.SubmissionStatus == "SUCCESS" ? "alert-success" : "alert-danger") alert-dismissible fade show p-4 rounded-4 shadow-sm mb-4" role="alert">
+                                <div class="d-flex align-items-start gap-3">
+                                    <i class="bi @(Model.SubmissionStatus == "SUCCESS" ? "bi-check-circle-fill text-success" : "bi-exclamation-triangle-fill text-danger") fs-2 flex-shrink-0"></i>
+                                    <div>
+                                        <h5 class="alert-heading fw-bold mb-1">
+                                            @(Model.SubmissionStatus == "SUCCESS" ? "Request Submitted Successfully!" : "Submission Alert")
+                                        </h5>
+                                        <p class="mb-2">@Model.SubmissionMessage</p>
+                                        @if (!string.IsNullOrEmpty(Model.ReferenceCode))
+                                        {
+                                            <div class="bg-white p-2 px-3 rounded-3 border d-inline-block text-dark fw-bold mb-2">
+                                                <small class="text-muted text-uppercase d-block" style="font-size: 0.7rem;">Tracking Reference</small>
+                                                <span class="text-primary font-monospace fs-5">@Model.ReferenceCode</span>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        }
+                    </div>
+
+                    <form asp-controller="Home" asp-action="SubmitRequest" method="post" id="getStartedForm">
+                        @Html.AntiForgeryToken()
+
+                        <div class="row g-3">
+                            <!-- Full Name -->
+                            <div class="col-md-6">
+                                <label asp-for="FormModel.FullName" class="form-label">
+                                    Full Name <span class="required-star">*</span>
+                                </label>
+                                <input asp-for="FormModel.FullName" class="form-control" placeholder="e.g. Rajesh Kumar" required />
+                                <span asp-validation-for="FormModel.FullName" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <label asp-for="FormModel.Email" class="form-label">
+                                    Email Address <span class="required-star">*</span>
+                                </label>
+                                <input asp-for="FormModel.Email" type="email" class="form-control" placeholder="name@company.com" required />
+                                <span asp-validation-for="FormModel.Email" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="col-md-6">
+                                <label asp-for="FormModel.Phone" class="form-label">
+                                    Phone Number <span class="required-star">*</span>
+                                </label>
+                                <input asp-for="FormModel.Phone" type="tel" class="form-control" placeholder="+91 98765 43210" required />
+                                <span asp-validation-for="FormModel.Phone" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Company -->
+                            <div class="col-md-6">
+                                <label asp-for="FormModel.Company" class="form-label">
+                                    Company / Organization
+                                </label>
+                                <input asp-for="FormModel.Company" class="form-control" placeholder="e.g. Celexsa Retail Pvt Ltd" />
+                                <span asp-validation-for="FormModel.Company" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Platform -->
+                            <div class="col-md-6">
+                                <label asp-for="FormModel.Platform" class="form-label">
+                                    Platform <span class="required-star">*</span>
+                                </label>
+                                <select asp-for="FormModel.Platform" class="form-select" required>
+                                    <option value="Linux">Linux Cloud Server (PHP / Python / cPanel)</option>
+                                    <option value="Windows">Windows Cloud Server (ASP.NET / MSSQL / IIS)</option>
+                                </select>
+                                <span asp-validation-for="FormModel.Platform" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Plan -->
+                            <div class="col-md-6">
+                                <label asp-for="FormModel.Plan" class="form-label">
+                                    Plan Size <span class="required-star">*</span>
+                                </label>
+                                <select asp-for="FormModel.Plan" class="form-select" required>
+                                    <option value="1 GB (₹250/month)">1 GB (₹250 / month)</option>
+                                    <option value="20 GB (₹500/month)">20 GB (₹500 / month) - Recommended</option>
+                                    <option value="Unlimited (₹2,500/month)">Unlimited (₹2,500 / month) - Enterprise</option>
+                                    <option value="Custom Enterprise Setup">Custom Enterprise Setup (Configurator)</option>
+                                </select>
+                                <span asp-validation-for="FormModel.Plan" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Domain Name -->
+                            <div class="col-12">
+                                <label asp-for="FormModel.DomainName" class="form-label">
+                                    Domain Name
+                                </label>
+                                <input asp-for="FormModel.DomainName" class="form-control" placeholder="e.g. mycompany.com" />
+                                <div class="form-text text-muted">Hint: Leave blank if you don't have one registered yet.</div>
+                                <span asp-validation-for="FormModel.DomainName" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-12">
+                                <label asp-for="FormModel.Message" class="form-label">
+                                    Anything we should know?
+                                </label>
+                                <textarea asp-for="FormModel.Message" class="form-control" rows="3" placeholder="Tell us about your traffic requirements, existing host, or software stack..."></textarea>
+                                <span asp-validation-for="FormModel.Message" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Consent Checkbox -->
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input asp-for="FormModel.Consent" class="form-check-input" type="checkbox" required />
+                                    <label asp-for="FormModel.Consent" class="form-check-label text-secondary small">
+                                        I agree to be contacted about my cloud server request and understand my inquiry will be routed to the SuperCloudServer engineering team. <span class="required-star">*</span>
+                                    </label>
+                                </div>
+                                <span asp-validation-for="FormModel.Consent" class="text-danger small d-block"></span>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary-scs btn-lg px-5 py-3 fs-5" id="submitBtn">
+                                    <span>Get Started</span> <i class="bi bi-arrow-right"></i>
+                                </button>
+                                <div class="mt-3 text-secondary small">
+                                    <i class="bi bi-shield-check text-success me-1"></i> 30-Day Money-Back Guarantee · No long-term lock-in · Immediate confirmation
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     14. FREQUENTLY ASKED QUESTIONS (FAQS)
+     ========================================================================= -->
+<section class="py-5" id="faq">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Got Questions?</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">
+                Clear, transparent answers about our cloud architecture, payment options, backups, and migration support.
+            </p>
+        </div>
+
+        <!-- FAQ Search Input -->
+        <div class="faq-search-wrapper">
+            <i class="bi bi-search faq-search-icon"></i>
+            <input type="text" id="faqSearch" class="form-control form-control-lg faq-search-input" placeholder="Search FAQs (e.g., VPS, backups, upgrade, SSH)..." />
+        </div>
+
+        <!-- FAQ Category Filter Pills -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+            <button type="button" class="btn btn-sm btn-outline-primary faq-cat-pill active rounded-pill px-3" data-category="All">All FAQs</button>
+            <button type="button" class="btn btn-sm btn-outline-primary faq-cat-pill rounded-pill px-3" data-category="General">General</button>
+            <button type="button" class="btn btn-sm btn-outline-primary faq-cat-pill rounded-pill px-3" data-category="Plans & Billing">Plans & Billing</button>
+            <button type="button" class="btn btn-sm btn-outline-primary faq-cat-pill rounded-pill px-3" data-category="Technical">Technical</button>
+            <button type="button" class="btn btn-sm btn-outline-primary faq-cat-pill rounded-pill px-3" data-category="Security & Support">Security & Migration</button>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="accordion accordion-scs" id="faqAccordion">
+                    @for (int i = 0; i < Model.Faqs.Count; i++)
+                    {
+                        var faq = Model.Faqs[i];
+                        <div class="accordion-item faq-item-entry" data-category="@faq.Category">
+                            <h2 class="accordion-header" id="heading-@faq.Id">
+                                <button class="accordion-button @(i == 0 ? "" : "collapsed")" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@faq.Id" aria-expanded="@(i == 0 ? "true" : "false")" aria-controls="collapse-@faq.Id">
+                                    @faq.Question
+                                </button>
+                            </h2>
+                            <div id="collapse-@faq.Id" class="accordion-collapse collapse @(i == 0 ? "show" : "")" aria-labelledby="heading-@faq.Id" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    @faq.Answer
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     15. FINAL CALL TO ACTION (CTA)
+     ========================================================================= -->
+<section class="py-5">
+    <div class="container">
+        <div class="cta-banner">
+            <h2 class="display-6 fw-extrabold mb-3 text-white">Ready to move to the cloud?</h2>
+            <p class="fs-5 text-white-50 max-w-700 mx-auto mb-4" style="max-width: 680px;">
+                Start with a plan that fits today and grow without limits. Not sure which one to choose? Our experts will recommend the right setup, free of charge.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="#get-started" class="btn btn-light text-primary fw-bold px-4 py-3 rounded-pill fs-6 shadow">
+                    <i class="bi bi-rocket-takeoff-fill me-1"></i> Get Started Now
+                </a>
+                <a href="#plans" class="btn btn-outline-light fw-bold px-4 py-3 rounded-pill fs-6">
+                    <i class="bi bi-grid-3x3-gap-fill me-1"></i> View All Plans
+                </a>
+                <a href="tel:+917401666633" class="btn btn-dark text-white fw-bold px-4 py-3 rounded-pill fs-6">
+                    <i class="bi bi-telephone-fill me-1"></i> Call Sales: +91 7401 6666 33
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

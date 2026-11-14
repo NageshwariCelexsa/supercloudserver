@@ -1,0 +1,134 @@
+@model supercloudserver.Models.HomeViewModel
+@{
+    ViewData["Title"] = "Cloud Server Plans & Pricing | SuperCloudServer";
+}
+
+<section class="py-5 bg-light">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Dedicated Cloud Plans</span>
+            <h1 class="section-title">Linux & Windows Cloud Server Plans</h1>
+            <p class="section-subtitle">
+                Compare compute, storage, and bandwidth allocations with transparent Indian Rupee and USD rates.
+            </p>
+        </div>
+
+        <div class="text-center mb-5">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-scs me-2">
+                <i class="bi bi-arrow-left"></i> Back to Full Overview
+            </a>
+            <a href="#plans-detail" class="btn btn-primary-scs">
+                <i class="bi bi-cart4"></i> Explore All Configurations
+            </a>
+        </div>
+
+        <div id="plans-detail">
+            <!-- Reuse plans display -->
+            <div class="row g-4 mb-5">
+                <div class="col-12">
+                    <h3 class="fw-bold mb-4 text-center"><i class="bi bi-ubuntu text-primary me-2"></i> Linux Cloud Server Plans (Single Domain)</h3>
+                </div>
+                @foreach (var plan in Model.LinuxPlans)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-card @(plan.IsPopular ? "featured" : "")">
+                            @if (plan.IsPopular)
+                            {
+                                <span class="featured-badge">Most Popular</span>
+                            }
+                            <div class="plan-header">
+                                <h3 class="plan-name">@plan.Name</h3>
+                                <p class="plan-tagline">@plan.Tagline</p>
+
+                                <div class="plan-price-box">
+                                    <span class="plan-currency">₹</span>
+                                    <span class="plan-amount">@plan.PriceMonthlyInr.ToString("N0")</span>
+                                    <span class="plan-period">/ month</span>
+                                </div>
+
+                                <div class="plan-specs-summary">
+                                    <div class="spec-item">
+                                        <span class="spec-label">Storage</span>
+                                        <span class="spec-val">@plan.DiskSpace</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Bandwidth</span>
+                                        <span class="spec-val">@plan.DataTransfer</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Email</span>
+                                        <span class="spec-val">@plan.EmailAccounts</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="plan-features-list">
+                                @foreach (var feat in plan.Highlights)
+                                {
+                                    <li><i class="bi bi-check-circle-fill"></i> <span>@feat</span></li>
+                                }
+                            </ul>
+
+                            <a asp-controller="Home" asp-action="Index" asp-fragment="get-started" class="btn @(plan.IsPopular ? "btn-primary-scs" : "btn-outline-scs") w-100 justify-content-center">
+                                Configure & Deploy
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-12">
+                    <h3 class="fw-bold mb-4 text-center"><i class="bi bi-windows text-info me-2"></i> Windows Cloud Server Plans (Single Domain)</h3>
+                </div>
+                @foreach (var plan in Model.WindowsPlans)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-card @(plan.IsPopular ? "featured" : "")">
+                            @if (plan.IsPopular)
+                            {
+                                <span class="featured-badge">Corporate Standard</span>
+                            }
+                            <div class="plan-header">
+                                <h3 class="plan-name">@plan.Name</h3>
+                                <p class="plan-tagline">@plan.Tagline</p>
+
+                                <div class="plan-price-box">
+                                    <span class="plan-currency">₹</span>
+                                    <span class="plan-amount">@plan.PriceMonthlyInr.ToString("N0")</span>
+                                    <span class="plan-period">/ month</span>
+                                </div>
+
+                                <div class="plan-specs-summary">
+                                    <div class="spec-item">
+                                        <span class="spec-label">Storage</span>
+                                        <span class="spec-val">@plan.DiskSpace</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Bandwidth</span>
+                                        <span class="spec-val">@plan.DataTransfer</span>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-label">Email</span>
+                                        <span class="spec-val">@plan.EmailAccounts</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="plan-features-list">
+                                @foreach (var feat in plan.Highlights)
+                                {
+                                    <li><i class="bi bi-check-circle-fill"></i> <span>@feat</span></li>
+                                }
+                            </ul>
+
+                            <a asp-controller="Home" asp-action="Index" asp-fragment="get-started" class="btn @(plan.IsPopular ? "btn-primary-scs" : "btn-outline-scs") w-100 justify-content-center">
+                                Configure & Deploy
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

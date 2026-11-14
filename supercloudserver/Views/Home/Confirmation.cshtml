@@ -1,0 +1,58 @@
+@model supercloudserver.Models.SubmissionResultViewModel
+@{
+    ViewData["Title"] = "Request Confirmed | SuperCloudServer";
+}
+
+<section class="py-5 bg-light min-vh-75 d-flex align-items-center">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-9">
+                <div class="bg-white p-4 p-md-5 rounded-4 border shadow-sm text-center">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-circle mb-4" style="width: 80px; height: 80px;">
+                        <i class="bi bi-check-lg display-4"></i>
+                    </div>
+
+                    <h2 class="fw-bold mb-2">Request Received Successfully!</h2>
+                    <p class="text-secondary mb-4">
+                        @Model.Message
+                    </p>
+
+                    <div class="bg-light p-4 rounded-3 text-start mb-4 border">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <small class="text-muted text-uppercase fw-bold d-block" style="font-size: 0.72rem;">Tracking Reference</small>
+                                <span class="fw-bold font-monospace text-primary fs-5">@Model.ReferenceNumber</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <small class="text-muted text-uppercase fw-bold d-block" style="font-size: 0.72rem;">Selected Configuration</small>
+                                <span class="fw-bold text-dark">@Model.Plan</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <small class="text-muted text-uppercase fw-bold d-block" style="font-size: 0.72rem;">Customer Name</small>
+                                <span class="fw-bold text-dark">@Model.FullName</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <small class="text-muted text-uppercase fw-bold d-block" style="font-size: 0.72rem;">Contact Email</small>
+                                <span class="fw-bold text-dark">@Model.Email</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info text-start small mb-4">
+                        <i class="bi bi-info-circle-fill me-1"></i>
+                        <strong>What happens next?</strong> Our cloud engineering desk will contact you via email and phone within 15–30 minutes to verify server specifications, assist with free data migration, and provision your access keys.
+                    </div>
+
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-primary-scs">
+                            <i class="bi bi-house-door-fill"></i> Return to Homepage
+                        </a>
+                        <a href="tel:+917401666633" class="btn btn-outline-scs">
+                            <i class="bi bi-telephone-fill"></i> Call Desk (+91 7401 6666 33)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,106 @@
+D:\Celexsa\Cloud Server\supercloudserver\bin\Debug\net10.0\appsettings.Development.json
+D:\Celexsa\Cloud Server\supercloudserver\bin\Debug\net10.0\appsettings.json
+D:\Celexsa\Cloud Server\supercloudserver\bin\Debug\net10.0\SuperCloudWeb.staticwebassets.runtime.json
+D:\Celexsa\Cloud Server\supercloudserver\bin\Debug\net10.0\SuperCloudWeb.staticwebassets.endpoints.json
+D:\Celexsa\Cloud Server\supercloudserver\bin\Debug\net10.0\SuperCloudWeb.exe
+D:\Celexsa\Cloud Server\supercloudserver\bin\Debug\net10.0\SuperCloudWeb.deps.json
+D:\Celexsa\Cloud Server\supercloudserver\bin\Debug\net10.0\SuperCloudWeb.runtimeconfig.json
+D:\Celexsa\Cloud Server\supercloudserver\bin\Debug\net10.0\SuperCloudWeb.dll
+D:\Celexsa\Cloud Server\supercloudserver\bin\Debug\net10.0\SuperCloudWeb.pdb
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\supercloudserver.GeneratedMSBuildEditorConfig.editorconfig
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\supercloudserver.AssemblyInfoInputs.cache
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\supercloudserver.AssemblyInfo.cs
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\supercloudserver.csproj.CoreCompileInputs.cache
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\SuperCloudWeb.MvcApplicationPartsAssemblyInfo.cache
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\supercloudserver.RazorAssemblyInfo.cache
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\supercloudserver.RazorAssemblyInfo.cs
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\scopedcss\bundle\SuperCloudWeb.styles.css
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\scopedcss\projectbundle\SuperCloudWeb.bundle.scp.css
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\8k3e41n0iu-{0}-92tq1atwyc-92tq1atwyc.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\8s55lcb80y-{0}-61n19gt1b8-61n19gt1b8.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\fq9rt50s9c-{0}-4ck9nigai0-4ck9nigai0.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\s8anv13cvg-{0}-bqjiyaj88i-bqjiyaj88i.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\173lnfaxsx-{0}-c2jlpeoesf-c2jlpeoesf.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\bm3skqz3s7-{0}-erw9l3u2r3-erw9l3u2r3.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\eqjwrpd1ig-{0}-aexeepp0ev-aexeepp0ev.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\n6fxpii6v5-{0}-d7shbmvgxk-d7shbmvgxk.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\3a8bpxl24m-{0}-ausgxo2sd3-ausgxo2sd3.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\3ahwesn2v2-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\ivmnj6qjky-{0}-cosvhxvwiu-cosvhxvwiu.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\9kgiu66ntv-{0}-ub07r2b239-ub07r2b239.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\ehhwsjyrrj-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\dymvzmpln1-{0}-b7pk76d08c-b7pk76d08c.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\clrnfymb3k-{0}-fsbi9cje9m-fsbi9cje9m.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\bk664t4qnb-{0}-rzd6atqjts-rzd6atqjts.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\n125i2v3vz-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\3a2pd90lv7-{0}-dxx9fxp4il-dxx9fxp4il.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\e4u1vr1z7q-{0}-jd9uben2k1-jd9uben2k1.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\eeu2dds82o-{0}-khv3u5hwcm-khv3u5hwcm.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\v8ztg90sn8-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\zlwoq4kv4r-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\ltml06o6e7-{0}-c2oey78nd0-c2oey78nd0.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\f9p1awo27s-{0}-tdbxkamptv-tdbxkamptv.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\3nje3aj9o2-{0}-j5mq2jizvt-j5mq2jizvt.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\ye4t2dji49-{0}-06098lyss8-06098lyss8.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\jzzbo0ljzy-{0}-nvvlpmu67g-nvvlpmu67g.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\hxi7et0lmh-{0}-s35ty4nyc5-s35ty4nyc5.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\h486uwd497-{0}-pj5nd1wqec-pj5nd1wqec.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\2u7u6k2p8a-{0}-46ein0sx1k-46ein0sx1k.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\srhue9oajg-{0}-v0zj4ognzu-v0zj4ognzu.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\1kgaiz0d6r-{0}-37tfw0ft22-37tfw0ft22.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\ettmti5x4v-{0}-hrwsygsryq-hrwsygsryq.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\rdv9j7q22l-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\jdhfjo7nje-{0}-ft3s53vfgj-ft3s53vfgj.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\pojyljd3r0-{0}-6cfz1n2cew-6cfz1n2cew.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\8jyktzmpk4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\qjax4tmf2s-{0}-493y06b0oq-493y06b0oq.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\8cxilcd88k-{0}-iovd86k7lj-iovd86k7lj.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\9qfruk3lqb-{0}-vr1egmr9el-vr1egmr9el.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\ht3ff0m7jl-{0}-kbrnm935zg-kbrnm935zg.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\e7u5j9lnai-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\kwbfwac9u5-{0}-y7v9cxd14o-y7v9cxd14o.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\61p7posevu-{0}-notf2xhcfb-notf2xhcfb.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\x1o0xp96o5-{0}-h1s4sie4z3-h1s4sie4z3.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\tjw4ogcnd8-{0}-63fj8s7r0e-63fj8s7r0e.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\du10vwbs0d-{0}-0j3bgjxly4-0j3bgjxly4.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\uk7dvetg5n-{0}-47otxtyo56-47otxtyo56.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\w1w5g6kxiz-{0}-4v8eqarkd7-4v8eqarkd7.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\wjue4vkoqy-{0}-356vix0kms-356vix0kms.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\kp3n5ozaqn-{0}-83jwlth58m-83jwlth58m.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\blot0lq7z4-{0}-mrlpezrjn3-mrlpezrjn3.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\xosz1w8isd-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\0sp019w812-{0}-ag7o75518u-ag7o75518u.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\pfyr9u2hu7-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\mlhg6ti5fn-{0}-0i3buxo5is-0i3buxo5is.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\a0jdj43lxd-{0}-o1o13a6vjx-o1o13a6vjx.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\5vrpncvtdm-{0}-ttgo8qnofa-ttgo8qnofa.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\xpj3wtgxrf-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\9vsqu2ejur-{0}-muycvpuwrr-muycvpuwrr.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\1c5eg4bxsy-{0}-87fc7y1x7t-87fc7y1x7t.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\3yc9or8eh5-{0}-mlv21k5csn-mlv21k5csn.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\r7uxhg66fh-{0}-07oizvo3rg-07oizvo3rg.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\compressed\6qk15qd152-{0}-07oizvo3rg-07oizvo3rg.gz
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\staticwebassets.build.json
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\staticwebassets.development.json
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\swae.build.ex.cache
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\SuperCloudWeb.dll
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\refint\SuperCloudWeb.dll
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\SuperCloudWeb.pdb
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\supercloudserver.genruntimeconfig.cache
+D:\Celexsa\Cloud Server\supercloudserver\obj\Debug\net10.0\ref\SuperCloudWeb.dll
+C:\Users\Nageshwari419\AppData\Local\Temp\supercloudserver_bin\appsettings.Development.json
+C:\Users\Nageshwari419\AppData\Local\Temp\supercloudserver_bin\appsettings.json
+C:\Users\Nageshwari419\AppData\Local\Temp\supercloudserver_bin\SuperCloudWeb.staticwebassets.runtime.json
+C:\Users\Nageshwari419\AppData\Local\Temp\supercloudserver_bin\SuperCloudWeb.staticwebassets.endpoints.json
+C:\Users\Nageshwari419\AppData\Local\Temp\supercloudserver_bin\SuperCloudWeb.exe
+C:\Users\Nageshwari419\AppData\Local\Temp\supercloudserver_bin\SuperCloudWeb.deps.json
+C:\Users\Nageshwari419\AppData\Local\Temp\supercloudserver_bin\SuperCloudWeb.runtimeconfig.json
+C:\Users\Nageshwari419\AppData\Local\Temp\supercloudserver_bin\SuperCloudWeb.dll
+C:\Users\Nageshwari419\AppData\Local\Temp\supercloudserver_bin\SuperCloudWeb.pdb

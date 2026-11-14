@@ -1,0 +1,99 @@
+@model supercloudserver.Models.GetStartedViewModel
+@{
+    ViewData["Title"] = "Contact Us & Get Started | SuperCloudServer";
+}
+
+<section class="py-5 bg-light">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="form-card">
+                    <div class="text-center mb-4">
+                        <span class="section-tag">24x7 Cloud Consultation</span>
+                        <h1 class="fw-bold mb-2">Get In Touch With a Cloud Expert</h1>
+                        <p class="text-secondary">
+                            Have questions about our Linux or Windows cloud servers, automatic failover, or free website migration? Our cloud engineering team is ready to assist you.
+                        </p>
+                    </div>
+
+                    <form asp-controller="Home" asp-action="SubmitRequest" method="post">
+                        @Html.AntiForgeryToken()
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="FullName" class="form-label">Full Name <span class="required-star">*</span></label>
+                                <input asp-for="FullName" class="form-control" placeholder="Rajesh Kumar" required />
+                                <span asp-validation-for="FullName" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Email" class="form-label">Email Address <span class="required-star">*</span></label>
+                                <input asp-for="Email" type="email" class="form-control" placeholder="name@company.com" required />
+                                <span asp-validation-for="Email" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Phone" class="form-label">Phone Number <span class="required-star">*</span></label>
+                                <input asp-for="Phone" type="tel" class="form-control" placeholder="+91 98765 43210" required />
+                                <span asp-validation-for="Phone" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Company" class="form-label">Company / Organization</label>
+                                <input asp-for="Company" class="form-control" placeholder="Celexsa Technologies" />
+                                <span asp-validation-for="Company" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Platform" class="form-label">Platform <span class="required-star">*</span></label>
+                                <select asp-for="Platform" class="form-select" required>
+                                    <option value="Linux">Linux Cloud Server</option>
+                                    <option value="Windows">Windows Cloud Server</option>
+                                </select>
+                                <span asp-validation-for="Platform" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Plan" class="form-label">Plan <span class="required-star">*</span></label>
+                                <select asp-for="Plan" class="form-select" required>
+                                    <option value="1 GB (₹250/month)">1 GB (₹250/month)</option>
+                                    <option value="20 GB (₹500/month)">20 GB (₹500/month) - Most Popular</option>
+                                    <option value="Unlimited (₹2,500/month)">Unlimited (₹2,500/month) - Enterprise</option>
+                                    <option value="Custom Enterprise Setup">Custom Enterprise Setup</option>
+                                </select>
+                                <span asp-validation-for="Plan" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-12">
+                                <label asp-for="DomainName" class="form-label">Domain Name</label>
+                                <input asp-for="DomainName" class="form-control" placeholder="mywebsite.com" />
+                                <div class="form-text text-muted">Leave blank if you do not have one yet.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <label asp-for="Message" class="form-label">Anything we should know?</label>
+                                <textarea asp-for="Message" class="form-control" rows="4" placeholder="How can our cloud specialists help you?"></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input asp-for="Consent" class="form-check-input" type="checkbox" required />
+                                    <label asp-for="Consent" class="form-check-label text-secondary small">
+                                        I agree to be contacted about my cloud server request. <span class="required-star">*</span>
+                                    </label>
+                                </div>
+                                <span asp-validation-for="Consent" class="text-danger small d-block"></span>
+                            </div>
+
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary-scs btn-lg px-5 py-3 fs-5">
+                                    <span>Submit Request</span> <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

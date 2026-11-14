@@ -1,0 +1,78 @@
+@model supercloudserver.Models.HomeViewModel
+@{
+    ViewData["Title"] = "Cloud vs VPS vs Shared Hosting Comparison | SuperCloudServer";
+}
+
+<section class="py-5 bg-light">
+    <div class="container py-4">
+        <div class="section-header">
+            <span class="section-tag">Infrastructure Deep Dive</span>
+            <h1 class="section-title">Cloud Server vs. Shared Hosting vs. VPS</h1>
+            <p class="section-subtitle">
+                Understand how pooled dedicated hardware, automated failover, and RAID-1 mirrored storage protect your website from the hardware failures of traditional servers.
+            </p>
+        </div>
+
+        <div class="scs-table-wrapper mb-5">
+            <div class="table-responsive">
+                <table class="table scs-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Feature & Specification</th>
+                            <th style="width: 25%;" class="text-muted">Shared Hosting</th>
+                            <th style="width: 25%;" class="text-muted">Virtual Private Server (VPS)</th>
+                            <th style="width: 25%;" class="highlight-col"><i class="bi bi-cloud-check-fill text-primary me-2"></i> SuperCloudServer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Compute Resources</td>
+                            <td>Shared with hundreds of active sites; prone to slowdowns</td>
+                            <td>Fixed vCPU and RAM, but confined to a single machine</td>
+                            <td class="highlight-col text-primary fw-bold">Dedicated & reserved CPU/RAM; spread across resilient cloud nodes</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Automatic Hardware Failover</td>
+                            <td><i class="bi bi-x-circle-fill text-danger me-1"></i> None (Single point of failure)</td>
+                            <td><i class="bi bi-x-circle-fill text-danger me-1"></i> None (Single machine crash takes site down)</td>
+                            <td class="highlight-col text-primary fw-bold"><i class="bi bi-check-circle-fill text-success me-1"></i> Instant multi-node automatic failover</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Storage Architecture</td>
+                            <td>Standard drives with high contention</td>
+                            <td>Single virtual drive slice</td>
+                            <td class="highlight-col text-primary fw-bold">Enterprise Mirrored (RAID 1) NVMe SSDs</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Scalability</td>
+                            <td>Limited; complex manual upgrades</td>
+                            <td>Requires reboot and downtime</td>
+                            <td class="highlight-col text-primary fw-bold">Instant scaling with zero rebuilds and zero downtime</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Administrative Control</td>
+                            <td>Basic control panel; no root access</td>
+                            <td>Root access provided</td>
+                            <td class="highlight-col text-primary fw-bold">Full Root/SSH access or 100% Fully Managed by experts</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Uptime SLA</td>
+                            <td>Best-effort (~99%)</td>
+                            <td>99.5% - 99.9%</td>
+                            <td class="highlight-col text-primary fw-bold">99.99% – 99.999% SLA Guarantee</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-scs me-2">
+                <i class="bi bi-house-door"></i> Back to Home
+            </a>
+            <a asp-controller="Home" asp-action="Index" asp-fragment="plans" class="btn btn-primary-scs">
+                <i class="bi bi-grid-fill"></i> View Cloud Plans
+            </a>
+        </div>
+    </div>
+</section>
